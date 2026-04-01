@@ -4,3 +4,5 @@
 !.gitignore
 !waybar
 !waybar/**
+!LICENSE
+!README.md
