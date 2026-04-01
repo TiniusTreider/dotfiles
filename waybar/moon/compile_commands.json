@@ -1,0 +1,17 @@
+[
+  {
+    "file": "moon-bar.c",
+    "arguments": [
+      "gcc",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-c",
+      "moon-bar.c",
+      "-o",
+      "moon-bar.o"
+    ],
+    "directory": "/home/tinius/.config/waybar/moon",
+    "output": "moon-bar.o"
+  }
+]

@@ -1,0 +1,6 @@
+*
+!nvim
+!nvim/**
+!.gitignore
+!waybar
+!waybar/**

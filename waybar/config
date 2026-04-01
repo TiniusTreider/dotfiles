@@ -1,0 +1,29 @@
+{
+	"layer": "top",
+	"position": "top",
+	"modules-left": ["clock", "custom/moon"],
+	"modules-center": [],
+	"modules-right": ["network", "custom/battery"],
+
+	"clock": {
+		"format": "{:%H:%M}"
+	},
+
+	"custom/moon": {
+		"exec": "~/.config/waybar/moon/moon-bar",
+		"interval": 900
+	},
+
+        "network": {
+                "interface": "wlo1",
+                "format-wifi": "{essid} {icon}",
+                "format-icons": ["[▂]", "[▄]", "[▆]", "[█]"],
+                "format-ethernet": "ethernet",
+        },
+
+	"custom/battery": {
+		"exec": "~/.config/waybar/battery/battery-bar",
+		"interval": 15
+	}
+}
+

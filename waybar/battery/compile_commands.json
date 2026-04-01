@@ -1,0 +1,17 @@
+[
+  {
+    "file": "battery-bar.c",
+    "arguments": [
+      "gcc",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-c",
+      "battery-bar.c",
+      "-o",
+      "battery-bar.o"
+    ],
+    "directory": "/home/tinius/.config/waybar/battery",
+    "output": "battery-bar.o"
+  }
+]

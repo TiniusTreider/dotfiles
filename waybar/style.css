@@ -1,0 +1,28 @@
+* {
+	font-family: "monospace";
+	font-size: 14px;
+	padding: 0 5px;
+
+	background-color: #000000;
+}
+
+#clock {
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#custom-moon {
+	font-weight: bold;
+	color: #80c0e0
+}
+
+#network {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#custom-battery {
+	font-weight: bold;
+	color: #60e080;
+}
+
