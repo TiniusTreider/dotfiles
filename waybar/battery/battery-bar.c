@@ -64,15 +64,14 @@ int main(void)
         else
                 error("Invalid status", status);
 
-        char status_char[4];
-
+        char status_char;
         switch (status_state) {
                 case FULL:
-                        strcpy(status_char, "→"); break;
+                        status_char = '>'; break;
                 case CHARGING:
-                        strcpy(status_char, "↑"); break;
+                        status_char = '^'; break;
                 case DISCHARGING:
-                        strcpy(status_char, "↓"); break;
+                        status_char = 'v'; break;
                 default:
                         error("Invalid status", status);
         }
@@ -109,7 +108,7 @@ int main(void)
                 memcpy(start_string + i * block_size, &block, block_size);
         }
 
-        printf("[%s%s%s] %d%% %s", start_string, middle, end_string, capacity, status_char);
+        printf("[%s%s%s] %d%% %c", start_string, middle, end_string, capacity, status_char);
 
         return 0;
 }
