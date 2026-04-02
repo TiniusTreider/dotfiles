@@ -109,7 +109,7 @@ int main(void)
                 memcpy(start_string + i * block_size, &block, block_size);
         }
 
-        printf("|%s%s%s|] %d%% %s", start_string, middle, end_string, capacity, status_char);
+        printf("[%s%s%s] %d%% %s", start_string, middle, end_string, capacity, status_char);
 
         return 0;
 }
