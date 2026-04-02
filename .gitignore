@@ -1,8 +1,11 @@
 *
 !nvim
 !nvim/**
-!.gitignore
 !waybar
 !waybar/**
+!hypr
+!hypr/**
 !LICENSE
 !README.md
+!.gitignore
+

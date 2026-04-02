@@ -17,14 +17,16 @@ cmp.setup({
     ['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<C-e>'] = cmp.mapping.abort(),
-    ['<CR>'] = cmp.mapping.confirm({ select = false, behavior = cmp.ConfirmBehavior.Insert }),
+    ['<CR>'] = cmp.mapping.confirm({ select = false, behavior = cmp.ConfirmBehavior.Insert })
   }),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    { name = 'ultisnips' },
-  }, {
-    { name = 'buffer' },
-  }),
+    { name = 'path' },
+    { name = 'ultisnips' }
+  },
+  {
+    { name = 'buffer' }
+  })
 })
 
 -- Cmdline '/' search completion
@@ -39,9 +41,21 @@ cmp.setup.cmdline('/', {
 cmp.setup.cmdline(':', {
   mapping = cmp.mapping.preset.cmdline(),
   sources = cmp.config.sources({
-    { name = 'path' },
-  }, {
-    { name = 'cmdline' },
+    {
+      name = 'path',
+      option = {
+        trailing_slash = true,
+        label_trailing_slash = true
+      }
+    }
+  },
+  {
+    {
+      name = 'cmdline',
+      option = {
+        treat_trailing_slash = false
+      }
+    },
   }),
 })
 

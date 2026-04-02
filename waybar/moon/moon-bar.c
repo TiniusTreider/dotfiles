@@ -29,14 +29,14 @@ int main(void)
         enum phase curr_phase = moon_phase(epoch);
 
         char *phase_emojis[8] = {
-                "🌑",
-                "🌒",
-                "🌓",
-                "🌔",
                 "🌕",
                 "🌖",
                 "🌗",
                 "🌘",
+                "🌑",
+                "🌒",
+                "🌓",
+                "🌔"
         };
         char *phase_strings[8] = {
                 "Full moon",
